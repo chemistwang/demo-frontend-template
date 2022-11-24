@@ -1,0 +1,41 @@
+{
+  "name": "demo-frontend-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist",
+    "lint": "eslint src --ext .js,.ts --cache --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemistwang/demo-frontend-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chemistwang/demo-frontend-template/issues"
+  },
+  "homepage": "https://github.com/chemistwang/demo-frontend-template#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3"
+  }
+}
